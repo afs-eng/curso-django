@@ -1,61 +1,43 @@
-{% extends 'base.html' %}
+{% extends 'geral/base.html' %}
 
 {% block content %}
-    <h1 class="text-orange-800 text-xl">Ola Mudo</h1>
-
-
-    <div class="card bg-base-100 w-96 shadow-xl">
-        <figure>
-            <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                    alt="Shoes"/>
-        </figure>
-        <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="card bg-base-100 w-96 shadow-xl">
-        <figure>
-            <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                    alt="Shoes"/>
-        </figure>
-        <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p class="primary">If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-                <button class="btn bg-blue-400 hover:bg-amber-300">Buy Now</button>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="card bg-base-100 w-96 shadow-xl">
-        <figure>
-            <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                    alt="Shoes"/>
-        </figure>
-        <div class="card-body">
-            <h2 class="card-title">
-                Shoes!
-                <div class="badge badge-secondary">NEW</div>
-            </h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-                <div class="badge badge-outline">Fashion</div>
-                <div class="badge badge-outline">Products</div>
-            </div>
-        </div>
-    </div>
-
-
-
+<div class="carousel rounded-box w-96">
+  <div class="carousel-item w-1/2">
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp"
+      class="w-full" />
+  </div>
+  <div class="carousel-item w-1/2">
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp"
+      class="w-full" />
+  </div>
+  <div class="carousel-item w-1/2">
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp"
+      class="w-full" />
+  </div>
+  <div class="carousel-item w-1/2">
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp"
+      class="w-full" />
+  </div>
+  <div class="carousel-item w-1/2">
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp"
+      class="w-full" />
+  </div>
+  <div class="carousel-item w-1/2">
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.webp"
+      class="w-full" />
+  </div>
+  <div class="carousel-item w-1/2">
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp"
+      class="w-full" />
+  </div>
+</div>
 
 {% endblock %}
 

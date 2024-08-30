@@ -55,5 +55,7 @@ def signup(request):
             messages.add_message(request, constants.SUCCESS, 'usuario criado com sucesso.')
             return redirect('login')
     else:
+
         form = SignupForm()
-        return render(request, 'usuario/signup.html', {'form': form})
+
+    return render(request, 'usuario/signup.html', {'form': form})

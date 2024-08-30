@@ -20,7 +20,9 @@ module.exports = {
          * Adjust the following line to match your project structure.
          */
         '../../templates/**/*.html',
-
+        '!../../**/node_modules',
+        '../../**/*.js',
+        '../../**/*.py',
         /*
          * Templates in other django apps (BASE_DIR/<any_app_name>/templates).
          * Adjust the following line to match your project structure.
@@ -58,4 +60,5 @@ module.exports = {
         require('@tailwindcss/aspect-ratio'),
         require('daisyui'),
     ],
+
 }

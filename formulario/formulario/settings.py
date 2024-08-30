@@ -128,11 +128,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = 'static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'templates/static')]
+
+
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'templates/static'),)
 STATIC_ROOT = os.path.join('static')
+
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+
+
 
 # Configurando o Tailwind
 TAILWIND_APP_NAME = 'theme'
@@ -148,7 +154,7 @@ NPM_BIN_PATH = '/usr/bin/npm'
 # Messages
 '''MESSAGE_TAGS = {
  constants.DEBUG: 'alert',
- constants.ERROR: 'alert alert-error',
+ constants.ERROR: 'alert-error',
  constants.SUCCESS: 'alert-success',
  constants.INFO: 'alert-info',
  constants.WARNING: 'alert-warning',

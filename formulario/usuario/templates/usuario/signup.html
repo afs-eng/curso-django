@@ -1,5 +1,5 @@
-{% extends 'base.html' %}
-
+{% extends 'geral/base.html' %}
+{% load static %}
 
 {% block content %}
 
@@ -82,7 +82,7 @@
         </div>
         <!-- Left: Image -->
         <div class="w-1/2 h-screen hidden lg:block">
-            <img src="#"
+            <img src="{% static 'img/lorem.jpg' %}"
                  alt="Placeholder Image" class="object-cover w-full h-full">
         </div>
     </div>
