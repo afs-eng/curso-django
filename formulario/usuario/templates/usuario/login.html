@@ -13,6 +13,20 @@
         </div>
         <!-- Right: Login Form -->
         <div class="lg:p-36 md:p-52 sm:20 p-8 w-full lg:w-1/2">
+            <br>
+
+               {% if messages %}
+                {% for message in messages %}
+                    <div role="alert" class="alert alert-{{ message.tags }}">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0 stroke-current" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <span>{{ message }}</span>
+                    </div>
+                {% endfor %}
+                {% endif %}
+
+            <br>
             <h1 class="text-2xl font-semibold mb-4">Login</h1>
             <form action="#" method="POST"> {% csrf_token %}
                 <!-- Username Input -->
@@ -45,7 +59,7 @@
             </form>
             <!-- Sign up  Link -->
             <div class="mt-6 text-blue-500 text-center">
-                <a href="#" class="hover:underline">Sign up Here</a>
+                <a href="{% url 'signup' %}" class="hover:underline">Sign up Here</a>
             </div>
         </div>
     </div>

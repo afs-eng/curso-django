@@ -9,8 +9,11 @@ https://docs.djangoproject.com/en/5.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
+
+
 import os
 from pathlib import Path
+from django.contrib.messages import constants
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -142,4 +145,15 @@ NPM_BIN_PATH = '/usr/bin/npm'
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
+# Messages
+'''MESSAGE_TAGS = {
+ constants.DEBUG: 'alert',
+ constants.ERROR: 'alert alert-error',
+ constants.SUCCESS: 'alert-success',
+ constants.INFO: 'alert-info',
+ constants.WARNING: 'alert-warning',
+}'''
+
+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
